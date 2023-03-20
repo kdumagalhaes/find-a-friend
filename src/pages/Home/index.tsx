@@ -1,4 +1,7 @@
 import { Container } from './styles'
+import Logo from '../../assets/icons/comp-logo.svg'
+import Dogs from '../../assets/icons/dogs.svg'
+import { Select } from '@/components/Select'
 
 export function Home() {
   function handleSearchPets() {
@@ -13,5 +16,21 @@ export function Home() {
     // TO DO
   }
 
-  return <Container>{/* COMECE POR AQUI */}</Container>
+  return (
+    <Container>
+      <img src={Logo} alt="logo find a friend" className="logo" />
+      <div className="hero">
+        <h1 className="cta">Leve a felicidade para o seu lar</h1>
+        <img src={Dogs} alt="desenho de cães" className="dogs" />
+      </div>
+      <div className="bottom">
+        <p className="description">
+          Encontre o animal de estimação ideal para seu estilo de vida!
+        </p>
+        <span className="label-select">Busque um amigo:</span>
+        <Select label="" name="UF" options={[]} />
+        <Select label="" name="UF" options={[]} />
+      </div>
+    </Container>
+  )
 }
