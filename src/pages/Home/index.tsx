@@ -2,6 +2,7 @@ import { Container } from './styles'
 import Logo from '../../assets/icons/comp-logo.svg'
 import Dogs from '../../assets/icons/dogs.svg'
 import { Select } from '@/components/Select'
+import { SearchButton } from '@/components/SearchButton'
 
 export function Home() {
   function handleSearchPets() {
@@ -30,6 +31,7 @@ export function Home() {
         <span className="label-select">Busque um amigo:</span>
         <Select label="" name="UF" options={[]} />
         <Select label="" name="UF" options={[]} />
+        <SearchButton />
       </div>
     </Container>
   )
