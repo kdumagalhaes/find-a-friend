@@ -28,10 +28,24 @@ export function Home() {
         <p className="description">
           Encontre o animal de estimação ideal para seu estilo de vida!
         </p>
-        <span className="label-select">Busque um amigo:</span>
-        <Select label="" name="UF" options={[]} />
-        <Select label="" name="UF" options={[]} />
-        <SearchButton />
+        <div className="search-form">
+          <span className="label-select">Busque um amigo:</span>
+          <Select
+            label=""
+            name="UF"
+            options={[]}
+            defaultOption="UF"
+            cssHandler="uf-select"
+          />
+          <Select
+            label=""
+            name="Cidade"
+            options={[]}
+            defaultOption="Cidade"
+            cssHandler="cidade-select"
+          />
+          <SearchButton />
+        </div>
       </div>
     </Container>
   )

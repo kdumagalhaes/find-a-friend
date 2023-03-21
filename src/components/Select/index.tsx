@@ -11,20 +11,28 @@ import {
 type SelectProps = ComponentProps<typeof FilterInput> & {
   label: string
   name: string
+  defaultOption: string
+  cssHandler?: string
   options: {
     value: string | number
     label: string
   }[]
 }
 
-export function Select({ label, name, options }: SelectProps) {
+export function Select({
+  label,
+  name,
+  options,
+  defaultOption,
+  cssHandler,
+}: SelectProps) {
   return (
     <Filter>
       <FilterLabel htmlFor={name}>{label}</FilterLabel>
       <FilterWrapper>
-        <FilterInput name={name} id={name}>
+        <FilterInput name={name} id={name} className={cssHandler}>
           <FilterInputOption value="" disabled selected>
-            Selecione
+            {defaultOption}
           </FilterInputOption>
           {options.map((option) => {
             return (
