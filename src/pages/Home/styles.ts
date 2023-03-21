@@ -30,4 +30,35 @@ export const Container = styled.div`
       max-width: 407px;
     }
   }
+
+  .search-form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 100%;
+    max-width: 55rem;
+
+    .label-select {
+      margin-right: 1.4rem;
+    }
+
+    .uf-select,
+    .cidade-select {
+      height: 4.5rem;
+      font-size: 1.25rem;
+    }
+
+    .uf-select {
+      outline: 1px solid #fff;
+      width: 4.5rem;
+      padding: 0.9rem;
+      margin-right: 0.4rem;
+    }
+
+    .cidade-select {
+      width: 17.5rem;
+      background-color: #e44449;
+    }
+  }
 `

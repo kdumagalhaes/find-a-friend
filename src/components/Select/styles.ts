@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 
-export const Filter = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-`
+export const Filter = styled.div``
 
 export const FilterLabel = styled.label`
   font-size: 12px;
